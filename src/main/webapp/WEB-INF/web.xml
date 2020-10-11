@@ -4,4 +4,37 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>AdministrarClientesServlet</servlet-name>
+  	<display-name>AdministrarClientesServlet</display-name>
+  	<description></description>
+  	<servlet-class>servlets.AdministrarClientesServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdministrarJuegosServlet</servlet-name>
+  	<display-name>AdministrarJuegosServlet</display-name>
+  	<description></description>
+  	<servlet-class>servlets.AdministrarJuegosServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdministrarAlquileresServlet</servlet-name>
+  	<display-name>AdministrarAlquileresServlet</display-name>
+  	<description></description>
+  	<servlet-class>servlets.AdministrarAlquileresServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdministrarClientesServlet</servlet-name>
+  	<url-pattern>/AdministrarClientesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdministrarJuegosServlet</servlet-name>
+  	<url-pattern>/AdministrarJuegosServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdministrarAlquileresServlet</servlet-name>
+  	<url-pattern>/AdministrarAlquileresServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>  
+   <welcome-file>WebAppServlet</welcome-file>    
+  </welcome-file-list>
 </web-app>
